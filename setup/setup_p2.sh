@@ -2,7 +2,7 @@
 # set -x # Use for debug mode
 
 # settings
-export name="fast-ai"
+export name="ihid-fast-ai"
 export cidr="0.0.0.0/0"
 
 # get the correct ami

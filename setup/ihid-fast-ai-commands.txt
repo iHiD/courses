@@ -1,0 +1,20 @@
+# Connect to your instance:
+ssh -i /Users/iHiD/.ssh/aws-key-ihid-fast-ai.pem ubuntu@ec2-52-214-66-51.eu-west-1.compute.amazonaws.com
+# Stop your instance: :
+aws ec2 stop-instances --instance-ids i-05d3d65b501186c35
+# Start your instance:
+aws ec2 start-instances --instance-ids i-05d3d65b501186c35
+Reboot your instance:
+aws ec2 reboot-instances --instance-ids i-05d3d65b501186c35
+export instanceId=i-05d3d65b501186c35
+export subnetId=subnet-a14c38f9
+export securityGroupId=sg-b96025df
+export instanceUrl=ec2-52-214-66-51.eu-west-1.compute.amazonaws.com
+export routeTableId=rtb-e2dc3685
+export name=ihid-fast-ai
+export vpcId=vpc-fc356c98
+export internetGatewayId=igw-cde033a9
+export subnetId=subnet-a14c38f9
+export allocAddr=eipalloc-f3e2d997
+export assocId=eipassoc-13b4af6a
+export routeTableAssoc=rtbassoc-b6dbffd1
